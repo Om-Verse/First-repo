@@ -1,0 +1,52 @@
+#JAI SHREEE RAMM!!!
+print("="*40)
+dls = "DLS Method"
+print(f"{dls:^40}")
+print("="*40)
+
+#print("-"*10, "Match Format","-"*10 )
+
+format = input("Enter format type(T20/ODI): ").upper()
+
+if format == "T20":
+    total_overs = 20
+elif format == "ODI":
+    total_overs = 50
+else:
+    print("Invalid format")
+    exist()
+
+print("\n")
+print("-"* 20, "Team 1", "-"* 20 )
+
+score =int(input("Enter team 1 score: "))
+
+print("\n")
+print("-"* 20, "Team 2", "-"* 20 )
+overs_to_chase = int(input("Enter overs available to chase: "))
+
+team1_resource = 100
+team2_resource = (overs_to_chase / total_overs) * 100
+
+par_score = score * (team2_resource / team1_resource) 
+
+target = int(par_score) + 1
+
+
+print("\n")
+print("="*20, "RESULT..", "="*20 )
+
+print(f"Format: {format}")
+print(f"Team 1 score: {score}")
+print("Overs available to chase:", overs_to_chase)
+print(f"Team 1 Resource: {team1_resource  } %")
+print(f"Team 2 Resource: {team2_resource  } % ")
+print("\n")
+print("-"* 40)
+print("DLS Score:", int(par_score))
+print("Target:", target)
+print("Overs to chase:", overs_to_chase)
+print("Team 2 needs",par_score, "runs in", overs_to_chase, " over to win the match..!!")  
+print("\n")
+gret = "🙏 not so thanku Thank you! 🙏"
+print(f"{gret:^60}")
