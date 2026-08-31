@@ -3,7 +3,7 @@ from colorama import Fore, Back, Style, init
 
 def menu():
     init(autoreset=True)
-    print(Fore.RED + '''╔══════════════════════════════════════════════╗
+    print(Fore.CYAN + '''╔══════════════════════════════════════════════╗
 ║                                              ║
 ║        📚  LIBRARY MANAGEMENT SYSTEM  📚     ║
 ║                                              ║
